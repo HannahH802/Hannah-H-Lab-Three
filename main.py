@@ -24,9 +24,17 @@ div(6,7)
 ####################################################
 #_________________________________________________
 
+###Start of program
+print("Welcome to my cool calc app!")
+print("What would you like to do?")
+print("type (a)dd (s)ubtract (m)ultiply (d)ivide (q)uit")
+
 x= int(input("Enter your first number: "))
 y= int(input("Enter your second number: "))
 add(x,y)
 multiply(x,y)
 sub(x,y)
 div(x,y)
+
+#####Start of program
+print("Welcome to my cool calc app!!")
