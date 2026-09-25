@@ -26,15 +26,36 @@ div(6,7)
 
 ###Start of program
 print("Welcome to my cool calc app!")
-print("What would you like to do?")
-print("type (a)dd (s)ubtract (m)ultiply (d)ivide (q)uit")
+while(True):
+    print("What would you like to do?")
+    print("type (a)dd (s)ubtract (m)ultiply (d)ivide (q)uit")
 
-x= int(input("Enter your first number: "))
-y= int(input("Enter your second number: "))
-add(x,y)
-multiply(x,y)
-sub(x,y)
-div(x,y)
+    user_choice = input(" : ")
+    #print(user_choice)
 
-#####Start of program
-print("Welcome to my cool calc app!!")
+    if user_choice == 'a':
+        x = int(input("Enter the first number: "))
+        y = int(input("Enter the second number: "))
+        add(x,y)
+
+    elif user_choice == 's':
+        x = int(input("Enter the first number: "))
+        y = int(input("Enter the second number: "))
+        sub(x,y)
+
+    elif user_choice == 'm':
+        x = int(input("Enter the first number: "))
+        y = int(input("Enter the second number: "))
+        multiply(x,y)
+
+    elif user_choice == 'd': 
+        x = int(input("Enter the first number: "))
+        y = int(input("Enter the second number: "))
+        div(x,y)
+     
+    elif user_choice == 'q':
+        print("Thanks for using my cool calc app!")
+
+
+    else:
+        print("Invalid Input Try Again.")
